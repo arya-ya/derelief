@@ -70,7 +70,7 @@ export default function Home() {
       {/* Header */}
       <header className={styles.header}>
         <div className={styles.logo}>
-          <span className={styles.logoIcon}>🌐</span>
+          <img src="/icon.png" alt="DeRelief Logo" className={styles.logoIcon} />
           <span className={styles.logoText}>DeRelief</span>
         </div>
         <Wallet />
