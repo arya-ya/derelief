@@ -24,7 +24,7 @@ interface DonateModalProps {
 }
 
 export default function DonateModal({ isOpen, onClose, campaign, onSuccess }: DonateModalProps) {
-    const { address, isConnected } = useAccount();
+    const { isConnected } = useAccount();
     const [amount, setAmount] = useState("");
     const [step, setStep] = useState<"input" | "approve" | "donate" | "success">("input");
 

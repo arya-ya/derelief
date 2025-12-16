@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { sdk } from "@farcaster/miniapp-sdk";
 import { Wallet } from "@coinbase/onchainkit/wallet";
 import { useAccount } from "wagmi";
@@ -69,7 +70,7 @@ const categories = [
 
 // SVG Icons Component
 const CampaignIcon = ({ type }: { type: string }) => {
-  const icons: Record<string, JSX.Element> = {
+  const icons: Record<string, React.ReactNode> = {
     flood: (
       <svg viewBox="0 0 64 64" className={styles.iconSvg}>
         <circle cx="32" cy="32" r="28" fill="url(#blueGrad)" />
@@ -142,9 +143,9 @@ const formatIDRX = (num: number) => {
 };
 
 export default function Home() {
-  const { address, isConnected } = useAccount();
+  const { isConnected } = useAccount();
   const { campaigns: blockchainCampaigns, isLoading: campaignsLoading, refetch } = useActiveCampaigns();
-  const { count: campaignCount } = useCampaignCount();
+  useCampaignCount(); // Called for side effects
   const { balance: idrxBalance } = useIDRXBalance();
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [donateModalOpen, setDonateModalOpen] = useState(false);
@@ -200,7 +201,7 @@ export default function Home() {
       <header className={styles.header}>
         <div className={styles.headerLeft}>
           <div className={styles.logo}>
-            <img src="/icon.png" alt="DeRelief" className={styles.logoIcon} />
+            <Image src="/icon.png" alt="DeRelief" width={36} height={36} className={styles.logoIcon} />
             <span className={styles.logoText}>DeRelief</span>
           </div>
         </div>
@@ -380,7 +381,7 @@ export default function Home() {
       <footer className={styles.footer}>
         <div className={styles.footerContent}>
           <div className={styles.footerBrand}>
-            <img src="/icon.png" alt="DeRelief" className={styles.footerLogo} />
+            <Image src="/icon.png" alt="DeRelief" width={28} height={28} className={styles.footerLogo} />
             <span>DeRelief</span>
           </div>
           <p className={styles.footerTagline}>Crowdfunding transparan berbasis blockchain</p>
