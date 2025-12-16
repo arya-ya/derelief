@@ -11,6 +11,7 @@
   "dependencies": {
     "@coinbase/onchainkit": "latest",
     "@farcaster/miniapp-sdk": "^0.2.1",
+    "@openzeppelin/contracts": "^5.4.0",
     "@tanstack/react-query": "^5.81.5",
     "next": "^15.5.9",
     "react": "^19.0.0",
@@ -21,11 +22,22 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@next/eslint-plugin-next": "^15.3.4",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.1.0",
+    "@nomicfoundation/hardhat-ethers": "^4.0.3",
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "chai": "^6.2.1",
     "eslint": "^9",
     "eslint-config-next": "15.3.4",
+    "ethers": "^6.16.0",
+    "hardhat": "^3.1.0",
+    "hardhat-gas-reporter": "^2.3.0",
+    "solidity-coverage": "^0.8.17",
     "typescript": "^5"
-  }
+  },
+  "type": "module"
 }
