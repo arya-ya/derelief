@@ -1,6 +1,12 @@
 # dependencies
 node_modules/
-*.md
+
+# private documents (keep on local only)
+HACKATHON_SUBMISSION_ANSWERS.md
+TECHNICAL_DOCS.md
+DeRelief.md
+a.md
+
 .pnp
 .pnp.*
 
