@@ -1,0 +1,60 @@
+﻿
+ΓòöΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòù
+Γòæ           DeRelief - List All Campaigns                 Γòæ
+ΓòÜΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓò¥
+
+≡ƒæñ Your wallet: 0x8356d18FF2C1D7B8072e56C2Dd9Dd7CF6d209e8C
+
+≡ƒôè Total Campaigns: 6
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+
+≡ƒôï Campaign #1: Flood Relief - West Java
+   Category: Disaster
+   Recipient: 0x8356d18FF2C1D7B8072e56C2Dd9Dd7CF6d209e8C Γ£à (YOU)
+   Collected: 0 / 1.000.000 IDRX
+   Active: Γ£à Yes
+   Withdrawn: Γ¥î No
+
+≡ƒôï Campaign #2: Heart Surgery for Andi
+   Category: Health
+   Recipient: 0x8356d18FF2C1D7B8072e56C2Dd9Dd7CF6d209e8C Γ£à (YOU)
+   Collected: 0 / 800.000 IDRX
+   Active: Γ£à Yes
+   Withdrawn: Γ¥î No
+
+≡ƒôï Campaign #3: Flood Relief - West Java
+   Category: Disaster
+   Recipient: 0x8356d18FF2C1D7B8072e56C2Dd9Dd7CF6d209e8C Γ£à (YOU)
+   Collected: 0 / 1.000.000 IDRX
+   Active: Γ£à Yes
+   Withdrawn: Γ¥î No
+
+≡ƒôï Campaign #4: Darurat Banjir & Longsor Sumatra 2025
+   Category: Disaster
+   Recipient: 0x8356d18FF2C1D7B8072e56C2Dd9Dd7CF6d209e8C Γ£à (YOU)
+   Collected: 3.000 / 5.000.000.000 IDRX
+   Active: Γ¥î No
+   Withdrawn: Γ£à Yes
+
+≡ƒôï Campaign #5: Bantuan Gempa Cianjur 2025
+   Category: Disaster
+   Recipient: 0x8356d18FF2C1D7B8072e56C2Dd9Dd7CF6d209e8C Γ£à (YOU)
+   Collected: 2.000 / 1.000.000.000 IDRX
+   Active: Γ£à Yes
+   Withdrawn: Γ¥î No
+   ≡ƒÆ░ CAN WITHDRAW: 2.000 IDRX
+
+≡ƒôï Campaign #6: Bantuan Gempa Cianjur 2025
+   Category: Disaster
+   Recipient: 0x8356d18FF2C1D7B8072e56C2Dd9Dd7CF6d209e8C Γ£à (YOU)
+   Collected: 0 / 1.000.000.000 IDRX
+   Active: Γ£à Yes
+   Withdrawn: Γ¥î No
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+
+≡ƒô¥ To withdraw, run:
+   npx hardhat run scripts/withdrawFunds.js --network base
+   (Make sure to set the correct CAMPAIGN_ID in the script)
+

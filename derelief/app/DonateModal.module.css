@@ -1,0 +1,425 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 1rem;
+}
+
+.modal {
+    background: linear-gradient(135deg, #1a1a3e 0%, #0f0f23 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 1.25rem;
+    max-width: 380px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.closeButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: #94a3b8;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.closeButton:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.25rem;
+    text-align: center;
+}
+
+.campaignName {
+    color: #a78bfa;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.progress {
+    margin-bottom: 0.75rem;
+}
+
+.progressBar {
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 0.35rem;
+}
+
+.progressFill {
+    height: 100%;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    border-radius: 3px;
+    transition: width 0.3s ease;
+}
+
+.progressText {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.8rem;
+}
+
+.inputGroup {
+    margin-bottom: 0.75rem;
+}
+
+.inputGroup label {
+    display: block;
+    color: #94a3b8;
+    margin-bottom: 0.35rem;
+    font-size: 0.8rem;
+}
+
+.input {
+    width: 100%;
+    padding: 0.7rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.input::placeholder {
+    color: #64748b;
+}
+
+.quickAmounts {
+    display: flex;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.quickButton {
+    flex: 1;
+    min-width: calc(50% - 0.2rem);
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    color: #94a3b8;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.quickButton:hover {
+    background: rgba(59, 130, 246, 0.2);
+    border-color: #3b82f6;
+    color: white;
+}
+
+.donateButton {
+    width: 100%;
+    padding: 0.75rem;
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.donateButton:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 16px rgba(59, 130, 246, 0.3);
+}
+
+.donateButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.note {
+    text-align: center;
+    color: #64748b;
+    font-size: 0.7rem;
+    margin-top: 0.75rem;
+}
+
+/* Processing state */
+.processing {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.processing p {
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.subtext {
+    color: #94a3b8 !important;
+    font-size: 0.9rem !important;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    border-top-color: #3b82f6;
+    border-radius: 50%;
+    margin: 0 auto;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Success state */
+.success {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.checkmark {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.success h3 {
+    color: #22c55e;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.success p {
+    color: #94a3b8;
+    margin-bottom: 0.75rem;
+}
+
+.txHash {
+    font-size: 0.8rem;
+    color: #64748b;
+    margin-bottom: 0.5rem;
+}
+
+.viewTx {
+    display: inline-block;
+    color: #60a5fa;
+    font-size: 0.9rem;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    transition: color 0.2s;
+}
+
+.viewTx:hover {
+    color: #93c5fd;
+}
+
+/* Error Box */
+.errorBox {
+    background: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    color: #fca5a5;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Warning Box (for network switch) */
+.warningBox {
+    background: rgba(251, 191, 36, 0.15);
+    border: 1px solid rgba(251, 191, 36, 0.3);
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    color: #fcd34d;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Balance Info */
+.balanceInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.8rem;
+}
+
+.balanceInfo span:first-child {
+    color: #94a3b8;
+}
+
+.balanceAmount {
+    color: #22c55e;
+    font-weight: 600;
+}
+
+/* Quick Button Active State */
+.quickButtonActive {
+    background: rgba(59, 130, 246, 0.3) !important;
+    border-color: #3b82f6 !important;
+    color: white !important;
+}
+
+.quickButton:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.quickButton:disabled:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #94a3b8;
+}
+
+/* Step Title */
+.stepTitle {
+    font-size: 1.2rem !important;
+    font-weight: 600;
+    color: white !important;
+    margin-bottom: 0.5rem !important;
+}
+
+/* Transaction Info */
+.txInfo {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    color: #a78bfa;
+    font-size: 0.9rem;
+}
+
+.closeSuccessButton {
+    padding: 0.75rem 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.closeSuccessButton:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Hackathon Disclaimer */
+.disclaimer {
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.15) 0%, rgba(245, 158, 11, 0.1) 100%);
+    border: 1px solid rgba(251, 191, 36, 0.4);
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.disclaimerTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    color: #fbbf24;
+    font-weight: 600;
+    font-size: 0.7rem;
+    margin-bottom: 0.2rem;
+}
+
+.disclaimerText {
+    color: #fcd34d;
+    font-size: 0.65rem;
+    line-height: 1.35;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .modal {
+        padding: 1.5rem;
+    }
+
+    .title {
+        font-size: 1.25rem;
+    }
+
+    .disclaimer {
+        padding: 0.75rem;
+    }
+
+    .disclaimerTitle {
+        font-size: 0.8rem;
+    }
+
+    .disclaimerText {
+        font-size: 0.7rem;
+    }
+
+}
+
+.manualButton {
+    background: transparent;
+    border: 1px dashed rgba(255, 255, 255, 0.3);
+    color: #94a3b8;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.manualButton:hover {
+    border-color: #60a5fa;
+    color: #60a5fa;
+    background: rgba(59, 130, 246, 0.1);
+}
